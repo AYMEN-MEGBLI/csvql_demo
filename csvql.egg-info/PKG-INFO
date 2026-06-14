@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: csvql
+Version: 0.1.0
+Summary: Blazing-fast SQL queries on CSV files — C core + Python threads
+License: MIT
+Project-URL: Homepage, https://github.com/your-username/csvql
+Project-URL: Repository, https://github.com/your-username/csvql
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: pytest-benchmark; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Dynamic: requires-python

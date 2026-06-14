@@ -1,0 +1,41 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "csvql"
+version         = "0.1.0"
+description     = "Blazing-fast SQL queries on CSV files — C core + Python threads"
+readme          = "README.md"
+license         = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies    = []   # zero runtime deps
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "pytest-benchmark",
+    "mypy",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+csvql = "csvql.cli:main"
+
+[project.urls]
+Homepage   = "https://github.com/your-username/csvql"
+Repository = "https://github.com/your-username/csvql"
+
+[tool.black]
+line-length    = 88
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 88
+select      = ["E", "F", "I"]
+
+[tool.mypy]
+python_version         = "3.9"
+strict                 = true
+ignore_missing_imports = true

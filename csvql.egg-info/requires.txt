@@ -1,0 +1,7 @@
+
+[dev]
+pytest>=7
+pytest-benchmark
+mypy
+black
+ruff
